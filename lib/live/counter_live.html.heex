@@ -1,3 +1,5 @@
 
 <h1>Counter : <%= @count %></h1>
 <button phx-click="inc">inc </button>
+<TasbehWeb.CounterLive.SimpleComponent.Counter.show count={@count} />
+<.live_component module={TasbehWeb.CounterLive.LiveComponent.Counter} id={1} content={@count} />
