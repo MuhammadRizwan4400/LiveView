@@ -2,11 +2,10 @@ defmodule TasbehWeb.CounterLive.LiveComponent.Counter do
   use Phoenix.LiveComponent
   def render(assigns) do
     ~H"""
-
+    <div>
     <p> LiveComponent <%= @content %> </p>
-
-
-
+    <button phx-click="rest"  :on-click={"Reset"}>Reseat </button>
+    </div>
     """
   end
   def update(assigns, socket) do
