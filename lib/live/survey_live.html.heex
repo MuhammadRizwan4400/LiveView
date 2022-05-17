@@ -1,0 +1,23 @@
+<!--
+<section class="row">
+
+  <h3>Counter <%= @counter %></h3>
+  <br>
+  <button 
+    style="margin-left: 20px;"
+    phx-click="increment"
+    phx-value-id="12"
+    phx-value-name="counter"
+  >
+  +
+  </button>
+</section>
+-->
+
+<section class="row">
+  <h2>Survey</h2>
+
+  <TasbehWeb.RatingLive.Index.games games={@games} current_user={@current_user} />
+
+  <!--.live_component module={LiveviewsAppWeb.SampleLive.CounterLive} id={1} content={@counter} />-->
+</section>
